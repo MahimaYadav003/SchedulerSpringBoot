@@ -31,7 +31,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		
 		<dependency>
 			<groupId>org.postgresql</groupId>
@@ -58,7 +62,7 @@
       <configuration>
         <appName>schedulerspringboot</appName>
         <processTypes>
-          <web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.example.Main</web>
+          <web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.springrestscheduler.scheduler</web>
         </processTypes>
       </configuration>
     </plugin>
