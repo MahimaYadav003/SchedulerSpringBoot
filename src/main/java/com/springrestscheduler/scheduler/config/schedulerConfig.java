@@ -17,7 +17,7 @@ public class schedulerConfig {
 				registry.addMapping("/**")
 				.allowedMethods("POST","GET")
 				.allowedHeaders("*")
-				.allowedOrigins("http://localhost:3000");
+				.allowedOrigins("https://schedulerdata.herokuapp.com/");
 			}
 		};
 	}

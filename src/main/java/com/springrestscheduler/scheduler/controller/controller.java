@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.springrestscheduler.scheduler.entities.Students;
 import com.springrestscheduler.scheduler.service.schedulerService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://schedulerdata.herokuapp.com/")
 
 @RestController
 @RequestMapping(value="/scheduler")
