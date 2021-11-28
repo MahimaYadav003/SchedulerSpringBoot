@@ -7,9 +7,6 @@ public interface schedulerService {
 
 	public List<Students> getStudents();
 
-	public Students getStudent(long studentId);
-
 	public Students AddStudent(Students students);
-
-	public Students UpdateStudent(Students students);
+	
 }

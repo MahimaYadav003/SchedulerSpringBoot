@@ -27,25 +27,10 @@ public class controller {
 		return this.schedulerservice.getStudents();
 	}
 	
-	@GetMapping("/students/{studentsId}")
-	public Students getCourse(@PathVariable long studentsId){
-		return this.schedulerservice.getStudent(studentsId);
-	}
-	
 	@PostMapping(path="/insert",consumes="application/json")
 	public Students AddCourse(@RequestBody Students students){
 		return this.schedulerservice.AddStudent(students);
 	}
 	
-	
-	@PutMapping("/update")
-	public Students UpdateCourse(@RequestBody Students students){
-		return this.schedulerservice.UpdateStudent(students);
-	}
-	
-//	@DeleteMapping("/delete/{Id}")
-//	public ResponseEntity<HttpStatus> deleteCourse(@PathVariable long Id){
-//		return this.schedulerservice.delteCourse(Id);
-//	}
 }
 

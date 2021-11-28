@@ -24,20 +24,10 @@ public class schedulerServiceImpl implements schedulerService {
 		return schedulerDao.findAll();
 	}
 	
-	
-	@Override
-	public Students getStudent(long studentId){
-//		return null;
-		return schedulerDao.getOne(studentId);
-	}
 	@Override
 	public Students AddStudent(Students students) {
 		schedulerDao.save(students);
 		return students;
 	}
-	@Override
-	public Students UpdateStudent(Students students) {
-		schedulerDao.save(students);
-		return null;
-	}
+	 
 }
